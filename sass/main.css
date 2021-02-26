@@ -457,28 +457,6 @@ body {
   transform: translate(-50%, -50%) rotate(-90deg);
 }
 
-.preload {
-  height: 100vh;
-  width: 100%;
-  top: 0;
-  position: fixed;
-  background-color: white;
-  z-index: 99999;
-  transition: opacity 0.5s ease;
-}
-
-.gif {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.preload-finish {
-  opacity: 0;
-  pointer-events: none;
-}
-
 .slider__parent {
   padding-top: 25rem;
   position: relative;
