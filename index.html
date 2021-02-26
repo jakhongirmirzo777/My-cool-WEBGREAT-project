@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@300;400;500;600;700;800&family=Open+Sans:wght@300;400;600;700;800&family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fe43db86c1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="sass/main.css" />
+    <link rel="icon" href="sass/images/favicon.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <title>Webgreat</title>
+  </head>
+  <body>
+    <div class="preload">
+      <img src="preloader.gif" alt="gif" class="gif" />
+    </div>
+
+    <section class="header" id="header">
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light navigation__nav"
+      >
+        <div class="container-fluid navigation">
+          <div class="navbar-brand navigation__logo__box">
+            <img
+              src="sass/images/logo-white.png"
+              alt="logo"
+              class="navigation__logo__box-logo"
+            />
+          </div>
+          <button
+            class="navbar-toggler navigation__toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon navigation__toggler-icon"
+              ><i class="fas fa-bars navigation__toggler-icon-inner"></i
+            ></span>
+          </button>
+          <div class="collapse navbar-collapse navigation__box" id="navbarNav">
+            <ul class="navbar-nav navigation__box__list">
+              <li class="nav-item navigation__box__item">
+                <a class="nav-link navigation__box__link" href="#header"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item navigation__box__item">
+                <a class="nav-link navigation__box__link" href="#about"
+                  >About us</a
+                >
+              </li>
+              <li class="nav-item navigation__box__item">
+                <a class="nav-link navigation__box__link" href="#team"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item navigation__box__item">
+                <a class="nav-link navigation__box__link" href="#services"
+                  >Pricing</a
+                >
+              </li>
+              <li class="nav-item navigation__box__item">
+                <a class="nav-link navigation__box__link" href="#summary"
+                  >Testimonials</a
+                >
+              </li>
+              <li class="nav-item navigation__box__item">
+                <a class="nav-link navigation__box__link" href="#services"
+                  >Sign in</a
+                >
+              </li>
+              <li class="nav-item navigation__box__item">
+                <a class="nav-link navigation__box__link" href="#services"
+                  >Sign up</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- <nav class="navigation__nav">
+          <div class="navigation__logo-box">
+            <img
+              class="navigation__logo-box--logo"
+              src="sass/images/logo-white.png"
+              alt="logo"
+            />
+          </div>
+          <ul class="navigation__list">
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="#">About us</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="#">Testimonials</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="#">Sign in</a>
+            </li>
+            <li class="navigation__list--item">
+              <a class="navigation__list--link" href="#">Sign up</a>
+            </li>
+          </ul>
+        </nav> -->
+      <div class="container header__container">
+        <div class="row">
+          <div class="col-lg-6 order-lg-1 order-md-2 order-sm-2">
+            <div class="header__container-box-1 u-margin-right">
+              <h1 class="heading__primary heading__primary__white">
+                <span class="heading__primary-span"
+                  ><span class="heading__primary-span--inner"
+                    >Webgreat</span
+                  ></span
+                >
+                is where all amazing things happen
+              </h1>
+            </div>
+            <div class="header__btn__container">
+              <a href="#" class="btn__large">Get started</a>
+              <ul>
+                <li>
+                  <span class="header__span"
+                    ><i class="far fa-thumbs-up header__span-icon"></i> GREAT
+                  </span>
+                </li>
+                <li>
+                  <span class="header__span"
+                    ><i class="far fa-paper-plane header__span-icon"></i>
+                    VISIT
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6 order-lg-2 order-md-1 order-sm-1">
+            <div class="header__container-box-2">
+              <svg
+                width="183"
+                height="67"
+                overflow="visible"
+                viewBox="0 0 183 67"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="img-fluid header__cloud-1"
+              >
+                <g id="header__cloud-1">
+                  <path
+                    id="Vector"
+                    d="M0 66.489C0.521461 56.525 4.84688 47.141 12.0841 40.2725C19.3213 33.404 28.9184 29.5748 38.8961 29.5746C40.0799 29.5746 41.2488 29.6363 42.4057 29.7397C46.9557 21.9119 53.4798 15.4149 61.3265 10.8975C69.1731 6.38006 78.0677 4.00038 87.1218 3.9961C96.1759 3.99182 105.073 6.36309 112.924 10.8731C120.775 15.3831 127.305 21.874 131.862 29.6974C132.838 29.6241 133.821 29.5746 134.815 29.5746C144.793 29.5748 154.39 33.404 161.628 40.2725C168.865 47.141 173.19 56.525 173.712 66.489"
+                    fill="url(#paint0_linear)"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M8.11243 63.4929C8.63389 53.5289 12.9593 44.1449 20.1965 37.2764C27.4338 30.4079 37.0309 26.5787 47.0085 26.5785C48.1923 26.5785 49.3612 26.6402 50.5181 26.7436C55.0681 18.9158 61.5923 12.4188 69.439 7.90137C77.2856 3.38396 86.1801 1.00429 95.2343 1.00001C104.288 0.995725 113.185 3.36698 121.036 7.87697C128.887 12.387 135.417 18.8778 139.975 26.7013C140.951 26.628 141.933 26.5785 142.928 26.5785C152.906 26.5787 162.503 30.4079 169.74 37.2764C176.977 44.1449 181.303 53.5289 181.824 63.4929"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                  />
+                </g>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear"
+                    x1="228"
+                    y1="-40"
+                    x2="-34"
+                    y2="150"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#1BC8E0" />
+                    <stop offset="1" stop-color="#F2F2F2" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <svg
+                width="183"
+                height="67"
+                viewBox="0 0 183 67"
+                overflow="visible"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="img-fluid header__cloud-2"
+              >
+                <g id="header__cloud-2">
+                  <path
+                    id="Vector"
+                    d="M0 66.489C0.521461 56.525 4.84685 47.141 12.0841 40.2725C19.3213 33.404 28.9184 29.5748 38.8961 29.5746C40.0799 29.5746 41.2488 29.6363 42.4057 29.7397C46.9557 21.9119 53.4798 15.4149 61.3265 10.8975C69.1731 6.38006 78.0677 4.00038 87.1218 3.9961C96.1759 3.99182 105.073 6.36309 112.924 10.8731C120.775 15.3831 127.305 21.8739 131.862 29.6974C132.838 29.6241 133.821 29.5746 134.815 29.5746C144.793 29.5748 154.39 33.404 161.627 40.2725C168.865 47.141 173.19 56.525 173.712 66.489"
+                    fill="url(#paint0_linear)"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M8.11243 63.4929C8.63389 53.5289 12.9593 44.1449 20.1965 37.2764C27.4337 30.4079 37.0309 26.5787 47.0085 26.5785C48.1923 26.5785 49.3612 26.6402 50.5181 26.7436C55.0681 18.9158 61.5923 12.4188 69.4389 7.90138C77.2856 3.38397 86.1801 1.00429 95.2342 1.00001C104.288 0.995725 113.185 3.36699 121.036 7.87699C128.887 12.387 135.417 18.8778 139.975 26.7013C140.951 26.628 141.933 26.5785 142.928 26.5785C152.906 26.5787 162.503 30.4079 169.74 37.2764C176.977 44.1449 181.303 53.5289 181.824 63.4929"
+                    stroke="white"
+                    stroke-miterlimit="10"
+                  />
+                </g>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear"
+                    x1="214"
+                    y1="-45"
+                    x2="-7.23705e-06"
+                    y2="155"
+                    gradientUnits="userSpaceOnUse"
+                  >
+                    <stop stop-color="#1BC8E0" />
+                    <stop offset="1" stop-color="#F2F2F2" />
+                  </linearGradient>
+                </defs>
+              </svg>
+              <img
+                src="sass/images/header-illustration.png"
+                alt="photo"
+                class="img-fluid header__illustration"
+              />
+              <svg
+                width="86"
+                height="241"
+                viewBox="0 0 86 241"
+                fill="none"
+                overflow="visible"
+                xmlns="http://www.w3.org/2000/svg"
+                class="header__flower img-fluid"
+              >
+                <g id="header__flower">
+                  <path
+                    id="Vector"
+                    d="M13.7085 84.3482C16.7378 85.4495 19.9814 85.8321 23.1838 85.4659C26.3862 85.0997 29.4597 83.9947 32.1622 82.238C34.8647 80.4813 37.1222 78.121 38.7569 75.343C40.3915 72.565 41.3586 69.4453 41.5819 66.2298C41.8051 63.0143 41.2785 59.7909 40.0435 56.8136C38.8085 53.8364 36.8988 51.1867 34.4651 49.0734C32.0313 46.96 29.14 45.4408 26.019 44.6355C22.8979 43.8303 19.6325 43.761 16.4801 44.433L17.001 55.1451L11.9329 45.9647C6.95879 48.3019 3.11608 52.5183 1.24922 57.6873C0.586225 59.4979 0.183176 61.3934 0.0520935 63.3172C-0.267839 67.8308 0.892248 72.3258 3.35656 76.1208C5.82087 79.9159 9.45509 82.8042 13.7085 84.3482V84.3482Z"
+                    fill="#6F6AAC"
+                  />
+                  <path
+                    id="Vector_2"
+                    d="M38.7859 208.591C36.9968 199.481 44.7492 191.405 52.4068 186.155C60.0643 180.905 69.0117 175.747 71.6245 166.838C75.3795 154.034 64.1945 142.308 55.4889 132.196C49.0301 124.692 43.4836 116.449 38.9653 107.639C37.1542 104.106 35.4897 100.414 35.013 96.4727C34.3266 90.7973 36.15 85.1496 37.987 79.736C44.1064 61.7015 50.6493 43.8182 57.6154 26.0859"
+                    stroke="#6F6AAC"
+                    stroke-miterlimit="10"
+                  />
+                  <path
+                    id="Vector_3"
+                    d="M45.248 13.7095C46.4368 10.4294 48.4321 7.50117 51.05 5.19476C53.6679 2.88835 56.8241 1.27794 60.228 0.511902L61.9416 10.6957L65.1186 0C69.5297 0.0654157 73.8059 1.53098 77.3298 4.18512C80.8537 6.83926 83.443 10.5446 84.7237 14.7662C86.0045 18.9878 85.9105 23.5072 84.4553 27.6719C83.0001 31.8366 80.2591 35.4311 76.6278 37.9365C72.9966 40.4418 68.6632 41.7283 64.2531 41.6102C59.8431 41.4922 55.5847 39.9757 52.0927 37.2797C48.6007 34.5837 46.0559 30.8477 44.8256 26.6111C43.5953 22.3746 43.7432 17.8566 45.248 13.7095H45.248Z"
+                    fill="#6F6AAC"
+                  />
+                  <path
+                    id="Vector_4"
+                    d="M46.7259 126.379C51.53 128.122 56.8074 128.036 61.5522 126.137C66.297 124.239 70.1773 120.661 72.4537 116.086C74.73 111.51 75.2431 106.257 73.8952 101.328C72.5473 96.3981 69.4327 92.137 65.1449 89.3564L62.7037 97.5756L60.9727 87.2718C60.9556 87.2637 60.9379 87.257 60.9197 87.2517C58.3501 86.3178 55.6217 85.8994 52.8904 86.0204C50.1591 86.1413 47.4784 86.7993 45.0014 87.9567C42.5245 89.114 40.2998 90.7481 38.4546 92.7655C36.6094 94.7829 35.1798 97.1441 34.2475 99.7142C33.3151 102.284 32.8983 105.013 33.0209 107.744C33.1435 110.476 33.8031 113.156 34.9619 115.632C36.1207 118.108 37.7561 120.332 39.7746 122.176C41.7932 124.02 44.1552 125.448 46.7259 126.379H46.7259Z"
+                    fill="#6F6AAC"
+                  />
+                  <path
+                    id="Vector_5"
+                    d="M35.3197 166.402C36.1457 171.102 38.5628 175.375 42.1655 178.505C45.7682 181.635 50.3374 183.43 55.1069 183.591C59.8764 183.752 64.5561 182.267 68.3612 179.387C72.1663 176.507 74.8654 172.406 76.0057 167.772C77.1461 163.138 76.6584 158.253 74.6245 153.936C72.5905 149.619 69.1341 146.132 64.8347 144.061C60.5353 141.99 55.6546 141.46 51.0109 142.56C46.3673 143.661 42.2432 146.324 39.3303 150.104L48.603 164.061L35.933 156.653C34.9506 159.807 34.7403 163.15 35.3197 166.402V166.402Z"
+                    fill="#6F6AAC"
+                  />
+                  <path
+                    id="Vector_6"
+                    d="M9.89044 220.931C9.89044 220.931 28.2559 213.734 33.7908 209.793C39.3257 205.852 62.0415 201.145 63.4146 207.466C64.7876 213.787 91.0144 238.904 70.2799 239.071C49.5454 239.239 22.1021 242.473 16.5779 239.108C11.0537 235.743 9.89044 220.931 9.89044 220.931Z"
+                    fill="#656380"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services" id="about">
+      <div class="container parent__container">
+        <div class="step">
+          <span class="step__span">1</span>
+          <span class="step__line">&nbsp;</span>
+          <span class="step__span">2</span>
+        </div>
+        <h2 class="heading__secondary-2 u-margin-bottom-big u-center-text">
+          About
+        </h2>
+        <div class="row u-margin-bottom-huge">
+          <div
+            class="col-lg-3 col-md-6 col-sm-12"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="services__container u-margin-right">
+              <div class="services__container__shape">
+                <i class="far fa-compass services__container__icon"></i>
+              </div>
+              <div class="services__container__text">
+                <h3 class="heading__tertiary">Fast</h3>
+                <p class="paragraph">
+                  Fast load times and lag free interaction, our highest
+                  priority.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 col-sm-12"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="services__container u-margin-right">
+              <div class="services__container__shape">
+                <i class="fas fa-laptop services__container__icon"></i>
+              </div>
+              <div class="services__container__text">
+                <h3 class="heading__tertiary">Responsive</h3>
+                <p class="paragraph">
+                  Our layouts will work on any device, big or small.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 col-sm-12"
+            data-aos="fade-up"
+            data-aos-delay="50"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="services__container u-margin-right">
+              <div class="services__container__shape">
+                <i class="far fa-lightbulb services__container__icon"></i>
+              </div>
+              <div class="services__container__text">
+                <h3 class="heading__tertiary">Intuitive</h3>
+                <p class="paragraph">
+                  Strong preference for easy to use, intuitive UX/UI.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 col-sm-12"
+            data-aos="fade-up"
+            data-aos-delay="900"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
+            <div class="services__container u-margin-right">
+              <div class="services__container__shape">
+                <i class="fas fa-rocket services__container__icon"></i>
+              </div>
+              <div class="services__container__text">
+                <h3 class="heading__tertiary">Dynamic</h3>
+                <p class="paragraph">
+                  Websites don't have to be static, we love making pages come to
+                  life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+          data-aos="fade-up"
+          data-aos-delay="1200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <div class="statistics__container u-margin-right">
+              <img
+                src="sass/images/statistics.png"
+                alt="photo"
+                class="img-fluid statistics__image"
+              />
+              <svg
+                width="1174"
+                height="794"
+                viewBox="0 0 1174 794"
+                fill="none"
+                overflow="visible"
+                class="img-fluid statistics__shadow"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g id="statistics-shadow">
+                  <path
+                    id="Vector"
+                    opacity="0.1"
+                    d="M1134.5 737.775C1108.47 758.892 1071.67 767.335 1036.11 772.527L1030.13 773.37C992.996 778.481 955.48 781 917.849 782.363C897.714 783.108 877.582 783.568 857.451 783.953L841.675 784.24C821.191 784.614 800.668 784.977 780.107 785.329C759.977 785.672 739.847 785.98 719.717 786.252C693.937 786.587 668.159 786.816 642.381 786.939C622.254 787.028 602.127 787.018 582.002 786.908C556.221 786.763 530.448 786.419 504.686 785.878C484.55 785.444 464.43 784.861 444.326 784.13C418.547 783.172 392.785 781.906 367.041 780.333C349.568 779.279 332.107 778.051 314.659 776.651L306.711 775.999C231.816 769.738 155.626 759.169 90.382 727.767L88.6228 726.909C87.7484 726.486 86.874 726.062 85.9999 725.618C74.0222 719.718 62.5631 712.817 51.7446 704.989C32.5094 690.925 16.6877 673.846 8.45362 653.705C-4.44848 622.115 2.96607 586.855 18.4624 556.289C33.9588 525.722 57.0152 498.231 77.0138 469.507C82.8722 461.093 88.4378 452.358 93.6246 443.395C126.044 387.186 142.551 321.902 109.862 267.007C105.545 260.006 100.874 253.23 95.8673 246.705C87.8645 236.013 79.7239 225.319 74.276 213.521C61.5704 186.068 64.7167 155.392 69.7943 126.275C76.5914 87.5632 88.7184 45.9223 125.408 22.1063C163.475 -2.62682 217.086 -0.743387 263.871 8.84349C336.613 23.6559 403.567 53.6892 471.19 80.8572C538.812 108.025 609.691 132.972 684.342 136.421C700.378 137.153 716.446 136.752 732.426 135.22V135.22C753.728 133.274 774.767 129.09 795.194 122.737C824.696 113.384 851.605 99.1142 871.664 79.084C914.682 36.2687 994.633 33.9046 1051.95 60.7113C1106.65 86.2901 1141.6 139.504 1138.37 192.218C1134.72 250.897 1090.23 298.667 1049.41 347.72C1044.46 353.664 1039.57 359.629 1034.81 365.639C1032.15 368.994 1029.54 372.357 1026.98 375.727C1022.5 381.676 1018.16 387.659 1014.07 393.718C993.142 424.785 978.171 462.217 991.947 496.17C999.674 515.181 1014.67 529.791 1032.79 542.603C1073.41 571.297 1129.7 590.936 1154.67 630.742C1176.18 665.049 1167.54 710.927 1134.5 737.775Z"
+                    fill="#00A7A7"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+          <div
+            class="col-lg-6 d-md-none d-lg-block d-sm-none d-md-block d-none d-sm-block"
+          >
+            <div class="statistics__container">
+              <div class="statistics__container__inner">
+                <div class="statistics__container__label">
+                  <div><i class="fab fa-html5"></i> HTML</div>
+                </div>
+                <div
+                  class="statistics__container__stat statistics__container__stat-1"
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="statistics__container__percent statistics__container__percent-1"
+                >
+                  90
+                </div>
+              </div>
+              <div class="statistics__container__inner">
+                <div class="statistics__container__label">
+                  <div><i class="fab fa-css3-alt"></i> CSS</div>
+                </div>
+                <div
+                  class="statistics__container__stat statistics__container__stat-2"
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="statistics__container__percent statistics__container__percent-2"
+                >
+                  90
+                </div>
+              </div>
+              <div class="statistics__container__inner">
+                <div class="statistics__container__label">
+                  <div><i class="fab fa-react"></i> React</div>
+                </div>
+                <div
+                  class="statistics__container__stat statistics__container__stat-3"
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="statistics__container__percent statistics__container__percent-3"
+                >
+                  80
+                </div>
+              </div>
+              <div class="statistics__container__inner">
+                <div class="statistics__container__label">
+                  <div><i class="fab fa-js"></i> JavaScript</div>
+                </div>
+                <div
+                  class="statistics__container__stat statistics__container__stat-4"
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="statistics__container__percent statistics__container__percent-4"
+                >
+                  80
+                </div>
+              </div>
+              <div class="statistics__container__inner">
+                <div class="statistics__container__label">
+                  <div><i class="fab fa-node-js"></i> Node.js</div>
+                </div>
+                <div
+                  class="statistics__container__stat statistics__container__stat-5"
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="statistics__container__percent statistics__container__percent-5"
+                >
+                  75
+                </div>
+              </div>
+              <div class="statistics__container__inner">
+                <div class="statistics__container__label">
+                  <div><i class="fab fa-angular"></i> Angular</div>
+                </div>
+                <div
+                  class="statistics__container__stat statistics__container__stat-6"
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="statistics__container__percent statistics__container__percent-6"
+                >
+                  70
+                </div>
+              </div>
+              <div class="statistics__container__inner">
+                <div class="statistics__container__label">
+                  <div><i class="fas fa-train"></i> Ruby/Rails</div>
+                </div>
+                <div
+                  class="statistics__container__stat statistics__container__stat-7"
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="statistics__container__percent statistics__container__percent-7"
+                >
+                  75
+                </div>
+              </div>
+              <div class="statistics__container__inner">
+                <div class="statistics__container__label">
+                  <div><i class="fas fa-marker"></i> UI Design</div>
+                </div>
+                <div
+                  class="statistics__container__stat statistics__container__stat-8"
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="statistics__container__percent statistics__container__percent-8"
+                >
+                  80
+                </div>
+              </div>
+              <div class="statistics__container__inner">
+                <div class="statistics__container__label">
+                  <div><i class="fas fa-photo-video"></i> Photoshop</div>
+                </div>
+                <div
+                  class="statistics__container__stat statistics__container__stat-9"
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="statistics__container__percent statistics__container__percent-9"
+                >
+                  60
+                </div>
+              </div>
+              <div class="statistics__container__inner">
+                <div class="statistics__container__label">
+                  <div><i class="fab fa-sketch"></i> Sketch</div>
+                </div>
+                <div
+                  class="statistics__container__stat statistics__container__stat-10"
+                >
+                  &nbsp;
+                </div>
+                <div
+                  class="statistics__container__percent statistics__container__percent-10"
+                >
+                  50
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="frame">
+        <svg
+          width="1644"
+          height="577"
+          viewBox="0 0 1644 577"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          class="frame__vektor"
+        >
+          <g id="Frame" clip-path="url(#clip0)">
+            <path
+              id="Vector"
+              d="M0 576.733L56.6822 576.404L113.364 576L170.047 575.503L226.729 574.892L283.411 574.14L340.093 573.215L396.775 572.078L453.458 570.679L510.14 568.958L566.822 566.841L623.504 564.237L680.186 561.035L736.869 557.096L793.551 552.251L850.233 546.292L906.915 538.961L963.597 529.946L1020.28 518.856L1076.96 505.216L1133.64 488.438L1190.33 467.802L1247.01 442.419L1303.69 411.199L1360.37 372.798L1417.05 325.564L1473.74 267.467L1530.42 196.007L1587.1 108.111L1643.78 0V577H1587.1H1530.42H1473.74H1417.05H1360.37H1303.69H1247.01H1190.33H1133.64H1076.96H1020.28H963.597H906.915H850.233H793.551H736.869H680.186H623.504H566.822H510.14H453.458H396.775H340.093H283.411H226.729H170.047H113.364H56.6822H0V576.733Z"
+              fill="url(#paint0_linear)"
+            />
+            <path
+              id="Vector_2"
+              d="M0 576.939L56.6897 576.871L113.379 576.794L170.069 576.708L226.759 576.612L283.448 576.505L340.138 576.384L396.828 576.249L453.517 576.098L510.207 575.929L566.897 575.74L623.586 575.527L680.276 575.29L736.966 575.023L793.655 574.725L850.345 574.391L907.034 574.017L963.724 573.598L1020.41 573.129L1077.1 572.603L1133.79 572.015L1190.48 571.355L1247.17 570.617L1303.86 569.79L1360.55 568.864L1417.24 567.826L1473.93 566.665L1530.62 565.363L1587.31 563.906L1644 562.274V577H1587.31H1530.62H1473.93H1417.24H1360.55H1303.86H1247.17H1190.48H1133.79H1077.1H1020.41H963.724H907.034H850.345H793.655H736.966H680.276H623.586H566.897H510.207H453.517H396.828H340.138H283.448H226.759H170.069H113.379H56.6897H0V576.939Z"
+              fill="#282C47"
+            />
+            <path
+              id="Vector_3"
+              d="M0 576.939L56.6897 576.871L113.379 576.794L170.069 576.708L226.759 576.612L283.448 576.505L340.138 576.384L396.828 576.249L453.517 576.098L510.207 575.929L566.897 575.74L623.586 575.527L680.276 575.29L736.966 575.023L793.655 574.725L850.345 574.391L907.034 574.017L963.724 573.598L1020.41 573.129L1077.1 572.603L1133.79 572.015L1190.48 571.355L1247.17 570.617L1303.86 569.79L1360.55 568.864L1417.24 567.826L1473.93 566.665L1530.62 565.363L1587.31 563.906L1644 562.274"
+              stroke="#0A043C"
+            />
+          </g>
+          <defs>
+            <linearGradient
+              id="paint0_linear"
+              x1="1537.5"
+              y1="-150"
+              x2="782.5"
+              y2="992.5"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stop-color="#09D1D1" />
+              <stop offset="1" stop-color="#04C2C9" />
+            </linearGradient>
+            <clipPath id="clip0">
+              <rect width="1644" height="577" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </section>
+
+    <section class="about" id="services">
+      <div class="container about__container__main">
+        <div class="step">
+          <span class="step__span">3</span>
+          <span class="step__line">&nbsp;</span>
+          <span class="step__span">4</span>
+        </div>
+        <h2 class="heading__secondary u-margin-bottom-big u-center-text">
+          Services
+        </h2>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <div class="about__container about__container-1 u-margin-right">
+              <div
+                class="about__container__inner u-margin-bottom-medium"
+                data-aos="flip-down"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
+                <span class="bulb__span">&nbsp;</span>
+                <div class="about__container__text">
+                  <h3 class="heading__tertiary">Lorem ipsum dolor</h3>
+                  <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    fugit laudantium molestiae ex temporibus dolorum.
+                  </p>
+                </div>
+                <div class="about__container__illustration">
+                  <img
+                    src="sass/images/illustration-1.png"
+                    alt="image"
+                    class="about__container__illustration-img"
+                  />
+                </div>
+              </div>
+              <div
+                class="about__container__inner"
+                data-aos="flip-down"
+                data-aos-delay="700"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
+                <span class="bulb__span">&nbsp;</span>
+                <div class="about__container__text">
+                  <h3 class="heading__tertiary">Lorem ipsum dolor</h3>
+                  <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    fugit laudantium molestiae ex temporibus dolorum.
+                  </p>
+                </div>
+                <div class="about__container__illustration">
+                  <img
+                    src="sass/images/illustration-2.png"
+                    alt="image"
+                    class="about__container__illustration-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <div class="about__container about__container-2 u-margin-right">
+              <div
+                class="about__container__inner u-margin-bottom-medium"
+                data-aos="flip-down"
+                data-aos-delay="700"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
+                <span class="bulb__span">&nbsp;</span>
+                <div class="about__container__text">
+                  <h3 class="heading__tertiary">Lorem ipsum dolor</h3>
+                  <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    fugit laudantium molestiae ex temporibus dolorum.
+                  </p>
+                </div>
+                <div class="about__container__illustration">
+                  <img
+                    src="sass/images/illustration-3.png"
+                    alt="image"
+                    class="about__container__illustration-img"
+                  />
+                </div>
+              </div>
+              <div
+                data-aos="fade-up"
+                data-aos-delay="1000"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
+                <button class="btn__hero">
+                  <span class="btn__hero__visible">Sign up now</span>
+                  <span class="btn__hero__invisible">Only 10 places left</span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+            <div class="about__container about__container-3 u-margin-right">
+              <div
+                class="about__container__inner u-margin-bottom-medium"
+                data-aos="flip-down"
+                data-aos-delay="50"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
+                <span class="bulb__span">&nbsp;</span>
+                <div class="about__container__text">
+                  <h3 class="heading__tertiary">Lorem ipsum dolor</h3>
+                  <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    fugit laudantium molestiae ex temporibus dolorum.
+                  </p>
+                </div>
+                <div class="about__container__illustration">
+                  <img
+                    src="sass/images/illustration-4.png"
+                    alt="image"
+                    class="about__container__illustration-img"
+                  />
+                </div>
+              </div>
+              <div
+                class="about__container__inner"
+                data-aos="flip-down"
+                data-aos-delay="700"
+                data-aos-duration="1000"
+                data-aos-easing="ease-in-out"
+              >
+                <span class="bulb__span">&nbsp;</span>
+                <div class="about__container__text">
+                  <h3 class="heading__tertiary">Lorem ipsum dolor</h3>
+                  <p class="paragraph">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In
+                    fugit laudantium molestiae ex temporibus dolorum.
+                  </p>
+                </div>
+                <div class="about__container__illustration">
+                  <img
+                    src="sass/images/illustration-5.png"
+                    alt="image"
+                    class="about__container__illustration-img"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="summary" id="summary">
+      <div class="container">
+        <div class="step u-margin-bottom-huge">
+          <span class="step__span">5</span>
+          <span class="step__line">&nbsp;</span>
+          <span class="step__span">6</span>
+        </div>
+        <div class="row u-margin-bottom-huge">
+          <div class="offset-2 col-8">
+            <div class="summary__text">
+              <h1 class="heading__primary heading__primary__blue text-center">
+                Webgreat provides people with the highest quality of work
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="col-12 summary__box">
+            <img
+              src="sass/images/summary-Illustration.png"
+              alt="summary-illustration"
+              class="summary__hero img-fluid"
+            />
+            <div class="summary__shape">
+              <svg
+                width="1518"
+                height="757"
+                viewBox="0 0 1518 757"
+                fill="none"
+                overflow="visible"
+                xmlns="http://www.w3.org/2000/svg"
+                class="summary__cloud img-fluid"
+              >
+                <g id="cloud">
+                  <path
+                    id="Vector"
+                    opacity="0.5"
+                    d="M1417.17 305.247C1418.01 297.68 1418.45 289.991 1418.45 282.224C1418.45 160.592 1313.3 61.9837 1183.6 61.9837C1142.3 61.9837 1103.37 72.0423 1069.68 89.645C977.871 33.7636 858.012 0 726.888 0C513.528 0 330.001 89.4885 248.576 217.826C244.062 217.58 239.505 217.446 234.906 217.446C105.135 217.446 0 316.043 0 437.675C0 482.38 14.2401 523.989 38.6478 558.725C38.6478 668.152 150.362 756.892 288.164 756.892H461.893L462.662 755.852C472.873 742.843 497.323 739.591 514.354 746.978C518.854 748.923 523.041 751.449 528.068 752.343C548.189 755.696 561.703 730.292 582.066 732.762C592.291 734.003 600.265 742.295 610.546 741.446C617.367 740.876 622.537 736.394 628.945 734.494C639.212 731.432 649.621 735.679 656.813 742.575C660.985 733.153 660.957 721.988 667.706 713.349C677.917 700.34 702.367 697.087 719.398 704.475C723.898 706.42 728.085 708.945 733.111 709.84C753.233 713.192 766.747 687.789 787.11 690.259C797.334 691.499 805.309 699.792 815.59 698.943C822.411 698.373 827.581 693.891 833.989 691.991C849.966 687.219 866.328 700.172 870.258 713.226C871.781 718.977 872.587 724.832 872.665 730.706C886.449 725.464 898.098 710.722 913.833 712.634C924.058 713.874 932.032 722.167 942.313 721.318C949.135 720.747 954.304 716.266 960.712 714.366C976.689 709.594 993.051 722.547 996.981 735.601C999.075 742.53 999.217 749.728 999.573 756.836H1287.44C1395.66 756.836 1483.35 687.185 1483.35 601.262C1505.31 567.733 1518 528.303 1518 486.079C1518 411.198 1478.13 345.034 1417.17 305.247Z"
+                    fill="#97D4C5"
+                  />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slider" id="slider">
+      <div class="container">
+        <div class="step u-margin-bottom-huge">
+          <span class="step__span">7</span>
+          <span class="step__line">&nbsp;</span>
+          <span class="step__span">8</span>
+        </div>
+        <div class="row u-margin-bottom-huge">
+          <div class="offset-2 col-8 text-center">
+            <div class="summary__text">
+              <h1 class="heading__primary heading__primary__blue">
+                Customers' feedbacks
+              </h1>
+            </div>
+          </div>
+        </div>
+        <div
+          class="row"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="col-lg-8 offset-lg-2 text-center">
+            <div class="slider__inner">
+              <div
+                id="carouselExampleIndicators"
+                class="carousel slide slider__parent"
+                data-bs-ride="carousel"
+              >
+                <ol class="carousel-indicators slider__list">
+                  <li
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                  >
+                    <img
+                      src="sass/images/user1.jpg"
+                      alt="photo"
+                      class="slider__img"
+                    />
+                  </li>
+                  <li
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                  >
+                    <img
+                      src="sass/images/user2.jpg"
+                      alt="photo"
+                      class="slider__img"
+                    />
+                  </li>
+                  <li
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="2"
+                  >
+                    <img
+                      src="sass/images/user3.jpg"
+                      alt="photo"
+                      class="slider__img"
+                    />
+                  </li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-interval="8000">
+                    <div class="slider__testimonial">
+                      <h2 class="heading__tertiary u-margin-bottom-small">
+                        Webgreat is the great UI kit
+                      </h2>
+                      <p class="paragraph">
+                        “Just then her head struck against the roof of the hall:
+                        in fact she was now more than nine feet high, and she at
+                        once took up the little golden key and hurried off to
+                        the garden door.”
+                      </p>
+                      <div class="slider__rating u-margin-bottom-small">
+                        <i class="fa fa-star gold-star"></i>
+                        <i class="fa fa-star gold-star"></i>
+                        <i class="fa fa-star gold-star"></i>
+                        <i class="fa fa-star gold-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p class="paragraph">John Snow</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="8000">
+                    <div class="slider__testimonial">
+                      <h2 class="heading__tertiary u-margin-bottom-small">
+                        Webgreat is the great UI kit
+                      </h2>
+                      <p class="paragraph">
+                        “Just then her head struck against the roof of the hall:
+                        in fact she was now more than nine feet high, and she at
+                        once took up the little golden key and hurried off to
+                        the garden door.”
+                      </p>
+                      <div class="slider__rating u-margin-bottom-small">
+                        <i class="fa fa-star gold-star"></i>
+                        <i class="fa fa-star gold-star"></i>
+                        <i class="fa fa-star gold-star"></i>
+                        <i class="fa fa-star gold-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p class="paragraph">Sheldon Cooper</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-interval="8000">
+                    <div class="slider__testimonial">
+                      <h2 class="heading__tertiary u-margin-bottom-small">
+                        Webgreat is the great UI kit
+                      </h2>
+                      <p class="paragraph">
+                        “Just then her head struck against the roof of the hall:
+                        in fact she was now more than nine feet high, and she at
+                        once took up the little golden key and hurried off to
+                        the garden door.”
+                      </p>
+                      <div class="slider__rating u-margin-bottom-small">
+                        <i class="fa fa-star gold-star"></i>
+                        <i class="fa fa-star gold-star"></i>
+                        <i class="fa fa-star gold-star"></i>
+                        <i class="fa fa-star gold-star"></i>
+                        <i class="fa fa-star"></i>
+                      </div>
+                      <p class="paragraph">Lara Stark</p>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev slider__control"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-bs-slide="prev"
+                >
+                  <span class="slider__control__span"
+                    ><i
+                      class="fa fa-angle-left slider__control__icon"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next slider__control"
+                  href="#carouselExampleIndicators"
+                  role="button"
+                  data-bs-slide="next"
+                >
+                  <span class="slider__control__span"
+                    ><i
+                      class="fa fa-angle-right slider__control__icon"
+                      aria-hidden="true"
+                    ></i
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="container">
+        <div class="step">
+          <span class="step__span">9</span>
+          <span class="step__line">&nbsp;</span>
+          <span class="step__span">10</span>
+        </div>
+        <div
+          class="row"
+          data-aos="fade-up"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          <div class="col-lg-7 col-md-12 col-sm-12">
+            <div class="team__inner u-margin-right">
+              <img src="sass/images/team.png" alt="photo" class="img-fluid" />
+            </div>
+          </div>
+          <div class="col-lg-5 col-md-12 col-sm-12">
+            <div class="team__inner">
+              <h1
+                class="heading__primary heading__primary__blue text-center u-margin-bottom-medium"
+              >
+                We brought best programmers together
+              </h1>
+              <p class="paragraph-2 u-margin-bottom-medium">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
+                ipsum minus ad. Modi maxime harum illo ut quas fugiat,
+                exercitationem sed vel, corrupti totam ratione repellendus
+                temporibus, amet repellat necessitatibus!
+              </p>
+              <button class="btn__hero">
+                <span class="btn__hero__visible">If interested</span>
+                <span class="btn__hero__invisible"
+                  >Write us about yourself</span
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer" id="footer">
+      <div
+        class="container"
+        data-aos="fade-up"
+        data-aos-delay="50"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="row">
+          <div
+            class="col-lg-6 col-md-6 col-sm-12 offset-lg-3 offset-md-3 offset-sm-0 text-center"
+          >
+            <img
+              src="sass/images/logo-white.png"
+              alt="logo"
+              class="footer__logo"
+            />
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="footer__inner u-margin-right">
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <h1>Information</h1>
+                </li>
+                <li class="footer__item">
+                  Our goal is to provide the world with the best working
+                  programs and see the world on its better version.
+                </li>
+                <li class="footer__item">
+                  This site was created by &copy; Jakhongirmirzo Tursunaliev in
+                  2020. All rights reserved.
+                </li>
+                <li class="footer__item">
+                  <div class="footer__icons">
+                    <i class="footer__icon fab fa-instagram"></i>
+                    <i class="footer__icon fab fa-facebook-f"></i>
+                    <i class="footer__icon far fa-envelope"></i>
+                    <i class="footer__icon fab fa-telegram-plane"></i>
+                    <i class="footer__icon fab fa-twitter"></i>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="footer__inner u-margin-right">
+              <ul class="footer__list">
+                <li class="footer__item"><h1>Contacts</h1></li>
+                <li class="footer__item">
+                  <i class="footer__icon fas fa-map-marker-alt"></i> Toshkent
+                  shahar, Chilonzor tumani, 19-daha, 24a-uy
+                </li>
+                <li class="footer__item">
+                  <i class="footer__icon far fa-envelope"></i>
+                  jakhongirmirzo.tursunaliev@mail.ru
+                </li>
+                <li class="footer__item">
+                  <i class="footer__icon fas fa-phone"></i> +998991091320
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-12 col-sm-12">
+            <div class="map__box">
+              <img
+                src="sass/images/user3.jpg"
+                alt="photo"
+                class="img-fluid map__img"
+              />
+              <div id="mapid"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="popup__item popup__hidden">
+      <div class="popup__item__inner">
+        <span class="popup__item__close">&times;</span>
+        <div class="container">
+          <div class="row">
+            <div
+              class="col-lg-8 col-md-8 col-sm-8 offset-lg-2 offset-md-2 offset-sm-2"
+            >
+              <div class="popup__item__inner__2">
+                <img
+                  src="sass/images/logo-white.png"
+                  alt="logo"
+                  class="popup__item__logo"
+                />
+                <form
+                  action="jakhongirmirzo.tursunaliev@mail.ru"
+                  class="popup__item__form"
+                >
+                  <input
+                    type="text"
+                    placeholder="Fullname"
+                    class="popup__item__input"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Username"
+                    class="popup__item__input"
+                  />
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="popup__item__input"
+                  />
+                  <input
+                    type="password"
+                    placeholder="Password"
+                    class="popup__item__input"
+                  />
+                  <button class="btn__popup">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <span class="scroll__top"
+      ><i class="fas fa-angle-right scroll__icon"></i
+    ></span>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>

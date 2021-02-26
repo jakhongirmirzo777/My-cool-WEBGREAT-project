@@ -1,0 +1,109 @@
+.popup__item {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba($color-dark-black, 0.4);
+  z-index: 5000;
+  backdrop-filter: blur(20px);
+  transition: all 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__inner {
+    padding: 5rem;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary, 0.5),
+        rgba($color-secondary, 0.5)
+      ),
+      url("images/popup5.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    width: 75%;
+    position: relative;
+  }
+
+  &__logo {
+    margin: 0;
+    height: 20rem;
+    width: 20rem;
+  }
+
+  &__inner__2 {
+    padding: 7rem;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    backdrop-filter: blur(25px);
+    width: 100%;
+    height: 100%;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__input {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 1.5rem;
+    border: 1px solid white;
+    padding: 0.5rem 1rem;
+    background-color: transparent;
+    width: 60%;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #ded7b1;
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+    }
+
+    &:focus:invalid {
+      border-bottom: 2px solid $color-red;
+    }
+
+    &::-webkit-input-placeholder {
+      color: #ded7b1;
+    }
+  }
+
+  &__close {
+    font-size: 5rem;
+    color: #ded7b1;
+    position: absolute;
+    top: -1rem;
+    left: 2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-tertiary;
+    }
+  }
+}
+
+.popup__hidden {
+  visibility: hidden;
+}
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(https://smallenvelop.com/wp-content/uploads/2014/08/Preloader_11.gif)
+    center no-repeat #fff;
+}

@@ -1,0 +1,120 @@
+body {
+  font-family: "Montserrat-black", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.heading__primary {
+  line-height: 1.5;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 4.5rem;
+  letter-spacing: 1rem;
+  display: inline-block;
+  text-shadow: 0 1rem 1.5rem rgba($color-black, 0.35);
+
+  &__white {
+    text-transform: uppercase;
+    color: $color-white-text;
+  }
+
+  &__black {
+    color: $color-heading-secondary;
+    text-align: center;
+  }
+
+  &__blue {
+    background-image: linear-gradient(
+      to right,
+      $color-heading-dark,
+      $color-heading-light
+    );
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  &-span {
+    display: inline-block;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba($color-orange-2, 0.85),
+      rgba($color-orange-3, 0.85)
+    );
+    box-shadow: 0 0.5rem 2rem rgba($color-orange-2, 0.35);
+    transform: skewX(-15deg);
+    padding: 1rem;
+
+    &--inner {
+      font-size: 5.5rem;
+      display: inline-block;
+      transform: skewX(15deg);
+    }
+  }
+}
+
+.heading__secondary {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 5rem;
+  color: $color-heading-secondary;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: 600;
+  text-shadow: 0 1rem 1.5rem rgba($color-black, 0.35);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    transform: translate(17%, 7rem);
+    height: 0.5rem;
+    width: 23rem;
+    background-color: $color-heading-secondary;
+  }
+}
+
+.heading__secondary-2 {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 5rem;
+  color: $color-heading-secondary;
+  text-transform: uppercase;
+  letter-spacing: 1rem;
+  font-weight: 600;
+  text-shadow: 0 1rem 1.5rem rgba($color-black, 0.35);
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    transform: translate(20%, 7rem);
+    height: 0.5rem;
+    width: 15rem;
+    background-color: $color-heading-secondary;
+  }
+}
+
+.heading__tertiary {
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  color: $color-dark-black;
+  font-size: 2.5rem;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 1rem 1.5rem rgba($color-black, 0.35);
+}
+
+.paragraph {
+  text-align: center;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  color: $color-light-black;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+}
+
+.paragraph-2 {
+  text-align: left;
+  line-height: 1.5;
+  font-family: "Open Sans", sans-serif;
+  color: $color-light-black;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+}

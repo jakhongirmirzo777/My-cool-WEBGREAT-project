@@ -1,0 +1,38 @@
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10rem;
+  &__span {
+    display: block;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    font-size: 4rem;
+    background: radial-gradient(
+      56.06% 56.06% at 48.48% 51.52%,
+      $color-span-2 0,
+      $color-span-1 66.1%,
+      rgba(40, 200, 201, 0) 100%
+    );
+    text-align: center;
+    color: $color-dark-black;
+    box-shadow: 0 0.35rem 2rem rgba($color-black, 0.3);
+    outline-offset: 1rem;
+    transition: all 0.2s;
+
+    &:hover {
+      //  This outline wouldn't work without offset property
+      outline: 1.1rem solid $color-span-1;
+      transform: scale(1.05) translateY(-0.5rem);
+    }
+  }
+
+  &__line {
+    display: block;
+    height: 10rem;
+    width: 0.5rem;
+    background-color: $color-span-3;
+    margin: 1rem 0;
+  }
+}

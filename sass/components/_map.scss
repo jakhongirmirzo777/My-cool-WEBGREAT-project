@@ -1,0 +1,22 @@
+#mapid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 30px;
+  z-index: 10;
+}
+
+.map__box {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.map__img {
+  position: relative;
+  z-index: 5;
+  max-height: 30rem;
+  border-radius: 30px;
+}

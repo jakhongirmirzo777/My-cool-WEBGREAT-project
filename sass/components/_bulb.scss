@@ -1,0 +1,15 @@
+.bulb__span {
+  position: absolute;
+  top: -1rem;
+  right: -1rem;
+  border-radius: 50%;
+  height: 3.5rem;
+  width: 3.5rem;
+  background: radial-gradient(
+    56.06% 56.06% at 48.48% 51.52%,
+    rgba(149, 230, 231, 0.76912) 0,
+    #28c8c9 66.1%,
+    rgba(40, 200, 201, 0) 100%
+  );
+  box-shadow: 0 0.3rem 2rem rgba($color-black, 0.3);
+}

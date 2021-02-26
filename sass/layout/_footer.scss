@@ -1,0 +1,32 @@
+.footer {
+  &__inner {
+  }
+
+  &__logo {
+    height: 22rem;
+    width: 25rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    color: white;
+  }
+
+  &__icon {
+    margin-right: 1.2rem;
+    cursor: pointer;
+
+    &:hover {
+      color: $color-tertiary;
+    }
+  }
+}

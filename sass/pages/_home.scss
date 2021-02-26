@@ -1,0 +1,160 @@
+.header {
+  padding: 0 13% 15%;
+  background-image: linear-gradient(
+    to right bottom,
+    rgba($color-primary, 0.85),
+    rgba($color-secondary, 0.85)
+  );
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 50% 100%, 0 85%);
+}
+
+.services {
+  padding: 5% 13% 11%;
+  position: relative;
+}
+
+.about {
+  padding: 7% 13% 12%;
+}
+
+.summary {
+  padding: 0 13% 5%;
+}
+
+.slider {
+  padding: 0 13% 5%;
+}
+
+.team {
+  padding: 5% 5% 10%;
+}
+
+.footer {
+  padding: 1% 13% 5%;
+  background-color: $color-footer;
+}
+
+.popup {
+  padding: 10rem;
+}
+
+// .about-us {
+//   padding: 25rem 0;
+//   margin-top: -20vh;
+//   background-color: $color-grey-light;
+// }
+
+// .feature {
+//   margin-top: -20vh;
+//   padding: 20rem 0 10rem;
+//   background-image: linear-gradient(
+//       to right bottom,
+//       rgba($color-feature-dark, 0.85),
+//       rgba($color-feature-light, 0.85)
+//     ),
+//     url("images/features.jpg");
+//   background-size: cover;
+//   background-position: center;
+//   clip-path: polygon(0 20vh, 100% 0, 100% 100%, 0 100%);
+// }
+
+// .composition {
+//   padding: 10rem 0 25rem;
+//   background-image: linear-gradient(
+//     60deg,
+//     $color-feature-dark 0%,
+//     $color-feature-dark 35%,
+//     transparent 10%
+//   );
+//   background-color: $color-grey-light;
+//   @media only screen and (max-width: 39.375em) {
+//     padding: 5rem 0;
+//   }
+// }
+
+// .feedback {
+//   background-color: $color-grey-light;
+//   padding: 10rem 0;
+//   background-image: linear-gradient(
+//       150deg,
+//       $color-feature-dark 0%,
+//       $color-feature-dark 5%,
+//       transparent 5%
+//     ),
+//     linear-gradient(
+//       45deg,
+//       $color-feature-dark 0%,
+//       $color-feature-dark 5%,
+//       transparent 5%
+//     ),
+//     linear-gradient(
+//       -150deg,
+//       $color-feature-dark 0%,
+//       $color-feature-dark 5%,
+//       transparent 5%
+//     ),
+//     linear-gradient(
+//       -45deg,
+//       $color-feature-dark 0%,
+//       $color-feature-dark 5%,
+//       transparent 5%
+//     );
+// }
+
+// .courses {
+//   background-color: $color-grey-light;
+//   padding: 10rem 0;
+// }
+
+// .location {
+//   background-color: $color-grey-light;
+//   padding: 10rem 0 10rem 10rem;
+//   background-image: linear-gradient(
+//       150deg,
+//       $color-feature-dark 0%,
+//       $color-feature-dark 5%,
+//       transparent 5%
+//     ),
+//     linear-gradient(
+//       45deg,
+//       $color-feature-dark 0%,
+//       $color-feature-dark 5%,
+//       transparent 5%
+//     );
+//   @include respond(tab-port) {
+//     padding: 5rem;
+//   }
+// }
+
+// .sign {
+//   padding: 10rem 0;
+//   background-image: linear-gradient(
+//       to right bottom,
+//       rgba($color-feature-dark, 0.85),
+//       rgba($color-feature-light, 0.85)
+//     ),
+//     url("images/sign-up.jpg");
+//   background-size: cover;
+//   background-position: center;
+// }
+
+// .footer {
+//   padding: 0 0 5rem;
+//   background: linear-gradient(
+//       217deg,
+//       rgba($color-footer, 0.8),
+//       rgba(255, 0, 0, 0) 70.71%
+//     ),
+//     linear-gradient(
+//       127deg,
+//       rgba($color-heading-dark, 0.8),
+//       rgba(0, 255, 0, 0) 70.71%
+//     ),
+//     linear-gradient(
+//       336deg,
+//       rgba($color-nav-dark, 0.8),
+//       rgba(0, 0, 255, 0) 70.71%
+//     ),
+//     linear-gradient(-150deg, #ea5455 0%, #ea5455 8%, transparent 8%),
+//     linear-gradient(150deg, #ea5455 0%, #ea5455 8%, transparent 8%);
+// }

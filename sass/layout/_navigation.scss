@@ -1,0 +1,60 @@
+.navigation {
+  &__nav {
+    background-color: transparent !important;
+  }
+
+  &__logo__box {
+    width: 13rem;
+    margin-right: 10rem;
+    &-logo {
+      width: 13rem;
+    }
+  }
+
+  &__toggler {
+    border: none;
+    &:focus,
+    &:active,
+    &-icon:focus {
+      outline: none;
+      box-shadow: none;
+      border: none;
+    }
+
+    &-icon {
+      &-inner {
+        font-size: 25px;
+        color: $color-white-text;
+      }
+    }
+  }
+
+  &__box {
+    &__list {
+      align-items: center;
+    }
+
+    &__item {
+      margin-right: 2rem;
+    }
+
+    &__link {
+      &:link,
+      &:visited {
+        display: block;
+        font-family: "Lato", sans-serif;
+        font-size: 2rem;
+        color: $color-white-text !important;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: all 0.2s;
+        position: relative;
+      }
+
+      &:hover,
+      &:active {
+        color: $color-tertiary !important;
+      }
+    }
+  }
+}

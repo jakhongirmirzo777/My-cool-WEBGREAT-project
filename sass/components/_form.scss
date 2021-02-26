@@ -1,0 +1,111 @@
+// .form {
+//   &-group:not(:last-child) {
+//     margin-bottom: 2rem;
+//   }
+
+//   &-input {
+//     display: block;
+//     font-size: 1.5rem;
+//     padding: 1.5rem 2rem;
+//     border-radius: 2px;
+//     border: none;
+//     border-bottom: 3px solid transparent;
+//     width: 70%;
+//     color: inherit;
+//     background-color: rgba($color-white, 0.5);
+//     transition: all 0.3s;
+
+//     &:focus {
+//       outline: none;
+//       border-bottom: 3px solid $color-green-dark;
+//       box-shadow: 0 1rem 2rem rgba($color-black, 0.1);
+//     }
+
+//     &:focus:invalid {
+//       border-bottom: 3px solid $color-secondary-dark;
+//     }
+
+//     &::-webkit-input-placeholder {
+//       color: $color-grey-dark;
+//     }
+//   }
+
+//   &-label {
+//     display: block;
+//     font-size: 1.3rem;
+//     margin-top: 0.7rem;
+//     margin-left: 2rem;
+//     transition: all 0.3s;
+//   }
+
+//   &-input:placeholder-shown + &-label {
+//     opacity: 0;
+//     visibility: hidden;
+//     transform: translateY(-4rem);
+//   }
+
+//   &__radio {
+//     &-group {
+//       display: inline-block;
+//       width: 45%;
+//       margin-bottom: 1rem;
+//       @include respond(tab-port) {
+//         margin-bottom: 2rem;
+//       }
+//       @media only screen and (max-width: 42em) {
+//         display: block;
+//         width: 60%;
+//       }
+//     }
+
+//     &-input {
+//       display: none;
+//     }
+
+//     &-label {
+//       font-size: 1.9rem;
+//       cursor: pointer;
+//       padding: 5rem;
+//       padding-right: 0;
+//       position: relative;
+
+//       @include respond(tab-port) {
+//         font-size: 1.5rem;
+//       }
+//     }
+
+//     &-button {
+//       display: inline-block;
+//       position: absolute;
+//       border-radius: 50%;
+//       border: 5px solid $color-green-dark;
+//       width: 2.5rem;
+//       height: 2.5rem;
+//       top: 4;
+//       left: 0;
+//       @media only screen and (max-width: 50em) {
+//         width: 2rem;
+//         height: 2rem;
+//       }
+
+//       &::after {
+//         content: "";
+//         display: block;
+//         height: 1.5rem;
+//         width: 1.5rem;
+//         background-color: $color-green-dark;
+//         position: absolute;
+//         top: 50%;
+//         left: 50%;
+//         transform: translate(-50%, -50%);
+//         border-radius: 50%;
+//         opacity: 0;
+//         transition: all 0.2s;
+//       }
+//     }
+
+//     &-input:checked ~ &-label &-button::after {
+//       opacity: 1;
+//     }
+//   }
+// }
